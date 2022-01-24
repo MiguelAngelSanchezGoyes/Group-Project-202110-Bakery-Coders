@@ -1,0 +1,183 @@
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.detail__image {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 2px;
+}
+.detail__image-photo {
+  border-color: rgb(78, 46, 78);
+  border-style: solid;
+  border-radius: 25px;
+  width: 100%;
+  aspect-ratio: 1;
+
+  box-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 38px #f4ecf5, 0 0 73px #fbb5ff,
+    0 0 80px #ed00fa00;
+}
+
+.detail__hashtag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 20px;
+  gap: 15px;
+}
+
+.detail__button {
+  background-color: rgba(255, 255, 255, 0.37);
+  border-radius: 10px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  padding: 5px;
+  letter-spacing: 1px;
+  height: 100%;
+  font-size: 1rem;
+  text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 38px #f44bfc, 0 0 73px #f44bfc,
+    0 0 80px #f44bfc;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.705);
+  }
+}
+
+.detail__description {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 50%;
+  align-items: flex-start;
+}
+
+.detail__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 38px #f44bfc, 0 0 73px #f44bfc,
+    0 0 80px #f44bfc;
+}
+
+.detail__name {
+  display: flex;
+  margin-left: 40px;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.detail__star,
+.detail__header a {
+  cursor: pointer;
+  font-size: 4rem;
+  color: white;
+}
+
+.detail__edit,
+.detail__header a {
+  cursor: pointer;
+  font-size: 3rem;
+  color: white;
+}
+
+.detail__title {
+  margin: 20px;
+  padding: 0 20px;
+  font-size: 2rem;
+  text-decoration-line: underline;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.detail__ingredients {
+  list-style: none;
+  margin: 0 20px;
+  padding: 0 20px;
+}
+
+.detail__subtitle {
+  margin: 0 20px;
+  padding: 0 20px;
+  text-decoration-line: underline;
+}
+
+.detail__recipe {
+  margin: 0 20px;
+  padding: 20px;
+}
+
+.detail__share {
+  margin: 0 20px;
+  padding: 20px;
+  font-size: 40px;
+  cursor: pointer;
+  text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 38px #f44bfc, 0 0 73px #f44bfc,
+    0 0 80px #f44bfc;
+}
+
+@media (max-width: 600px) {
+  .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    max-width: 100%;
+  }
+
+  .detail__image {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    aspect-ratio: 1;
+    width: 80%;
+    padding: 2px;
+  }
+
+  .detail__hashtag {
+    justify-content: space-evenly;
+    gap: 5px;
+  }
+
+  .detail__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .detail__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .detail__name {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+  }
+  .detail__star,
+  .detail__header a {
+    margin-top: 10px;
+  }
+
+  .detail__edit,
+  .detail__header a {
+    margin-top: 10px;
+  }
+}

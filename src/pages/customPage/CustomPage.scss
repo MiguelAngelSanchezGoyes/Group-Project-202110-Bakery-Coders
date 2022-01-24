@@ -1,0 +1,38 @@
+.add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.add-button {
+  width: 200px;
+  padding: 20px 40px;
+  margin-bottom: 20px;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 3px solid white;
+  font-size: 2.3rem;
+  animation: pulsate 0.11s ease-in-out infinite alternate;
+  transition: all 0.1s;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 40px #f44bfc, 0 0 80px #f44bfc,
+    0 0 90px #f44bfc, 0 0 100px #f44bfc;
+  &:hover {
+    cursor: pointer;
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #f44bfc,
+      0 0 80px #f44bfc, 0 0 90px #f44bfc, 0 0 100px #f44bfc, 0 0 150px #f44bfc;
+    transition: all 0.1s;
+  }
+}
+
+.custom {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,36 @@
+.gallery {
+  display: flex;
+  padding-top: 30px;
+
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 20px;
+  width: 75%;
+
+  height: 80vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+}
+
+.gallery-custom {
+  height: 70vh;
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    height: 100%;
+    width: 100%;
+  }
+
+  .gallery-custom {
+    height: 100%;
+  }
+}
